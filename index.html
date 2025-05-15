@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Badminton SHOP</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        :root{
+            --sb-- : 5px; /* space between block */
+            
+        }
+
+        .Container{
+            margin: 0 auto;
+        }
+
+        @media (min-width: 992px) {
+            .Container{
+                width: 1200px;
+            }
+        }
+
+        .HomePage-Slide{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .OnDesktop{
+            display: none;
+        }
+
+        @media (min-width: 992px) {
+            .OnDesktop{
+                display: block;
+            }
+
+            .OnMobile{
+                display: none;
+            }
+        }
+
+        .Header{
+            /* background-image: linear-gradient(to right, #166307 , #A5CE1E); */
+            background-color: #e2e2e2;
+        }
+
+
+        .Nav{
+            padding : 20px 0;
+            display: flex;
+            gap: 20px;
+            margin-bottom: var(--sb--);
+        }
+
+        .HeaderNav-Link{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .HeaderNav-Link:hover{
+            text-decoration: underline;
+        }
+
+        .SectionProduct{
+            margin: var(--sb--) 0;
+        }
+
+        .SectionProduct{
+            padding: 30px;
+            background-color: #e2e2e2;
+        }
+
+        .SectionProduct-Title{
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.63);
+        }
+
+        .SectionProduct-Grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .ProductItem{
+            background-color: white;
+            padding: 10px;
+        }
+
+        .ProductItem-Frame{
+            height: 220px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(235, 235, 235);
+        }
+
+        .ProductItem-Thumnail{
+            max-height: 100%;
+        }
+
+        .ProductItem-Info{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="Header">
+        <div class="Container">
+            <nav class="Nav">
+                <a class="HeaderNav-Link" href="index.html">Trang chủ</a>
+                <a class="HeaderNav-Link" href="#SectionProduct-Seconhand">Vợt lướt</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="HomePage">
+        <section class="HomePage-Slide OnDesktop">
+            <div class="Container">
+                <div class="swiper HomePage-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/Slide1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Slide2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Slide3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Slide4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="HomePage-Slide OnMobile">
+            <div class="Container">
+                <div class="swiper HomePage-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="Swiper-IMG" src="img/slide-mobile-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="Swiper-IMG" src="img/slide-mobile-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="Swiper-IMG" src="img/slide-mobile-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="Swiper-IMG" src="img/slide-mobile-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="SectionProduct" id="SectionProduct-Seconhand">
+            <div class="Container">
+                <h3 class="SectionProduct-Title">Vợt lướt</h3>
+                <div class="SectionProduct-Grid">
+                    <div class="ProductItem">
+                        <div class="ProductItem-Frame">
+                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        </div>
+                        <p class="ProductItem-Info">
+                            77PRO | 4U5 | 99% | 3600k
+                        </p>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItem-Frame">
+                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        </div>
+                        <p class="ProductItem-Info">
+                            77PRO | 4U5 | 99% | 3600k
+                        </p>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItem-Frame">
+                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        </div>
+                        <p class="ProductItem-Info">
+                            77PRO | 4U5 | 99% | 3600k
+                        </p>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItem-Frame">
+                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        </div>
+                        <p class="ProductItem-Info">
+                            77PRO | 4U5 | 99% | 3600k
+                        </p>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItem-Frame">
+                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        </div>
+                        <p class="ProductItem-Info">
+                            77PRO | 4U5 | 99% | 3600k
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".HomePage-Swiper", {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+</html>
