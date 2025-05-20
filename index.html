@@ -130,7 +130,7 @@
 
         .ProductItem-Info{
             margin-top: 10px;
-            font-size: 15px;
+            font-size: 13px;
             display: flex;
             flex-direction: column;
             gap : 5px;
@@ -141,21 +141,38 @@
 
         .ProductItem-Name{
             text-align: center;
-            font-size: 13px;
         }
 
         .ProductItem-Price{
-            /* background-color: var(--red--); */
             background: linear-gradient(to right, #166307, #A5CE1E);
             color: white;
             padding : 3px 5px;
             border-radius: 5px;
-            
         }
 
         .Footer{
             box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             height: 400px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .FooterGrid{
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap : 60px;
+
+        }
+
+        .FooterItem--Lead{
+            font-weight: bold;
+        }
+
+        .FooterColumn{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
     </style>
 </head>
@@ -213,7 +230,7 @@
             </div>
         </section>
 
-        <section class="Section Section--Shadow" id="Section-Racket">
+        <section class="Section Section--Shadow">
             <div class="Container">
                 <h3 class="Section-Title">Vợt cầu lông</h3>
                 <div class="Section-Grid">
@@ -266,7 +283,7 @@
             </div>
         </section>
 
-        <section class="Section" id="Section-Racket">
+        <section class="Section">
             <div class="Container">
                 <h3 class="Section-Title">Giày cầu lông</h3>
                 <div class="Section-Grid">
@@ -319,7 +336,7 @@
             </div>
         </section>
 
-        <section class="Section Section--Shadow" id="Section-Racket">
+        <section class="Section Section--Shadow">
             <div class="Container">
                 <h3 class="Section-Title">Vợt cầu lông cũ</h3>
                 <div class="Section-Grid">
@@ -372,7 +389,7 @@
             </div>
         </section>
 
-        <section class="Section" id="Section-Racket">
+        <section class="Section">
             <div class="Container">
                 <h3 class="Section-Title">Quần áo cầu lông</h3>
                 <div class="Section-Grid">
@@ -427,7 +444,39 @@
     </div>
 
     <footer class="Footer">
-
+        <div class="Container">
+            <div class="FooterGrid">
+                <div class="FooterColumn">
+                    <p class="FooterItem FooterItem--Lead">Công ty TNHH Mạnh Dũng Sports</p>
+                    <p class="FooterItem"><b>Địa chỉ</b> Số 72, phố Văn Giang, thị trấn Văn Giang, huyện Văn Giang, tỉnh Hưng Yên, Việt Nam</p>
+                    <p class="FooterItem"><b>Người đại diện</b> Đỗ Sơn Tùng</p>
+                    <p class="FooterItem"><b>Email</b> manhdungsports@gmail.com</p>
+                </div>
+                <div class="FooterColumn">
+                    <p class="FooterItem FooterItem--Lead">Hướng dẫn khách hàng</p>
+                    <p class="FooterItem">Hướng dẫn bảo hành</p>
+                    <p class="FooterItem">Hướng dẫn đổi trả hàng</p>
+                    <p class="FooterItem">Hướng dẫn vận chuyển</p>
+                    <p class="FooterItem">Hướng dẫn thanh toán</p>
+                    <p class="FooterItem">Hướng dẫn bảo mật</p>
+                </div>
+                <div class="FooterColumn">
+                    <p class="FooterItem FooterItem--Lead">Hỗ trợ khách hàng</p>
+                    <p class="FooterItem">Hướng dẫn bảo hành</p>
+                    <p class="FooterItem">Hướng dẫn đổi trả hàng</p>
+                    <p class="FooterItem">Hướng dẫn vận chuyển</p>
+                    <p class="FooterItem">Hướng dẫn thanh toán</p>
+                    <p class="FooterItem">Hướng dẫn bảo mật</p>
+                </div>
+                <div class="FooterColumn">
+                    <p class="FooterItem FooterItem--Lead">Vị trí cửa hàng</p>
+                    <div class="FooterItem">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.130189434382!2d105.93952307352077!3d20.947286290575235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135afcc68063b9f%3A0x5b21b9e15c97cfa!2zQ-G6p3UgbMO0bmcgTeG6oW5oIETFqW5nIChNRCBCQURNSU5UT04gU0hPUCk!5e0!3m2!1svi!2s!4v1747725729336!5m2!1svi!2s"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Swiper JS -->
