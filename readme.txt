@@ -1,15 +1,6 @@
-/* Đặt tên cho class theo kiểu lai BEM */
-/* Luôn viết hoa chữ cái đầu */
+Cách đặt tên class trong html:
 
-/* Block */
-.Header {} 
-
-/* Thành phần của block */
-.Header-Logo {} 
-.Header-Menu {}
-
-/* Modifier của thành phần */
-.Header-Menu--Active {}
-
-/* Nếu là viết tắt thì sẽ viết hoa hết */
-.SwiperSlide-IMG {}
+- Theo cú pháp lạc đà viết hoa chữ cái đầu.
+VD : ProductItem, HeaderNav, ...
+- Các class trạng có thêm dấu _
+VD : ProductItem_Red

@@ -1,0 +1,153 @@
+body {
+    font-family: 'KoHo';
+}
+
+:root{
+    --sbb-- : 10px; /* space between block */
+    --ssp-- : 30px; /* space section padding */
+
+    --cdo-- : rgb(238, 63, 63); /* color đỏ */
+    --cbg-- : white; /* color background */
+    --cpr-- : linear-gradient(to right, #166307, #A5CE1E); /* color primary */
+}
+
+
+.HomePageSlide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.Header{
+    box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: var(--cbg--);
+}
+
+
+.Nav{
+    padding : 20px 0;
+    display: flex;
+    gap: 30px;
+    margin-bottom: var(--sbb--);
+}
+
+.HeaderNavLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.HeaderNavLink:hover{
+    text-decoration: underline;
+}
+
+.Section{
+    margin: var(--sbb--) 0;
+}
+
+.Section_Shadow{
+    box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: var(--cbg--);
+}
+
+.Section{
+    padding: var(--ssp--);
+}
+
+.SectionTitle{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.ProductGrid{
+    display: grid;
+    gap: var(--sbb--);
+}
+
+.ProductGrid_5{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.ProductItem{
+    background-color: white;
+    padding: var(--sbb--) var(--sbb--) 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.ProductItemFrame{
+    height: 220px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ProductItemThumnail{
+    max-width: 100%;
+}
+
+.ProductItemDetail{
+    margin-top: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap : 5px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.ProductItemName{
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+}
+
+.ProductItemPrice{
+    background: var(--cdo--);
+    color: white;
+    padding : 3px 5px;
+    border-radius: 5px;
+}
+
+.Footer{
+    box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.FooterGrid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap : 60px;
+}
+
+.FooterItem_Heading{
+    font-weight: bold;
+}
+
+.FooterItem{
+    color: black;
+    text-decoration: none;
+}
+
+.FooterColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

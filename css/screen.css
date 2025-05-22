@@ -1,0 +1,24 @@
+
+.Container{
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .Container{
+        width: 1200px;
+    }
+}
+
+.OnDesktop{
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .OnDesktop{
+        display: block;
+    }
+
+    .OnMobile{
+        display: none;
+    }
+}

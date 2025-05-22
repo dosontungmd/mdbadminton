@@ -6,191 +6,31 @@
     <title>MD Badminton SHOP</title>
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+    <link rel="stylesheet" href="font/koho.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/screen.css" />
 
-    <style>
-        body {
-            font-family: 'KoHo';
-        }
-
-        :root{
-            --sbb-- : 10px; /* space between block */
-            --ssp-- : 30px; /* space section padding */
-            --red-- : rgb(197, 42, 42);
-            --bgr-- : white;
-        }
-
-        .Container{
-            margin: 0 auto;
-        }
-
-        @media (min-width: 992px) {
-            .Container{
-                width: 1200px;
-            }
-        }
-
-        .HomePage-Slide{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .OnDesktop{
-            display: none;
-        }
-
-        @media (min-width: 992px) {
-            .OnDesktop{
-                display: block;
-            }
-
-            .OnMobile{
-                display: none;
-            }
-        }
-
-        .Header{
-            box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-            background-color: var(--bgr--);
-        }
-
-
-        .Nav{
-            padding : 20px 0;
-            display: flex;
-            gap: 20px;
-            margin-bottom: var(--sbb--);
-        }
-
-        .HeaderNav-Link{
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: bold;
-            color: black;
-        }
-
-        .HeaderNav-Link:hover{
-            text-decoration: underline;
-        }
-
-        .Section{
-            margin: var(--sbb--) 0;
-        }
-
-        .Section--Shadow{
-            box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-            background-color: var(--bgr--);
-        }
-
-        .Section{
-            padding: var(--ssp--);
-        }
-
-        .Section-Title{
-            font-weight: bold;
-            margin-bottom: 30px;
-            font-size: 20px;
-            color: rgba(0, 0, 0, 0.63);
-        }
-
-        .Section-Grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            gap: var(--sbb--);
-        }
-
-        .ProductItem{
-            background-color: white;
-            padding: var(--sbb--) var(--sbb--) 15px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        }
-
-        .ProductItem-Frame{
-            height: 220px;
-            width: 100%;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-        }
-
-        .ProductItem-Thumnail{
-            max-width: 100%;
-        }
-
-        .ProductItem-Info{
-            margin-top: 10px;
-            font-size: 13px;
-            display: flex;
-            flex-direction: column;
-            gap : 5px;
-            justify-content: center;
-            align-items: center;
-            line-height: 20px;
-        }
-
-        .ProductItem-Name{
-            text-align: center;
-        }
-
-        .ProductItem-Price{
-            background: linear-gradient(to right, #166307, #A5CE1E);
-            color: white;
-            padding : 3px 5px;
-            border-radius: 5px;
-        }
-
-        .Footer{
-            box-shadow: rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .FooterGrid{
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap : 60px;
-
-        }
-
-        .FooterItem--Lead{
-            font-weight: bold;
-        }
-
-        .FooterColumn{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-    </style>
 </head>
 <body>
 
     <header class="Header">
         <div class="Container">
             <nav class="Nav">
-                <a class="HeaderNav-Link" href="index.html">Trang chủ</a>
-                <a class="HeaderNav-Link" href="#Section-Racket">Vợt cầu lông</a>
+                <a class="HeaderNavLink" href="index.html">Trang chủ</a>
+                <a class="HeaderNavLink" href="#Section-Racket">Vợt cầu lông</a>
+                <a class="HeaderNavLink" href="#Section-Racket">Giày cầu lông</a>
+                <a class="HeaderNavLink" href="#Section-Racket">Vợt cầu lông cũ</a>
+                <a class="HeaderNavLink" href="#Section-Racket">Quần áo lông</a>
+                <a class="HeaderNavLink" href="#Section-Racket">Phụ kiện cầu lông</a>
             </nav>
         </div>
     </header>
 
     <div class="HomePage">
-        <section class="HomePage-Slide OnDesktop">
+        <section class="HomePageSlide OnDesktop">
             <div class="Container">
-                <div class="swiper HomePage-Swiper">
+                <div class="swiper HomePageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="img/Slide1.png" alt="">
@@ -209,9 +49,9 @@
             </div>
         </section>
 
-        <section class="HomePage-Slide OnMobile">
+        <section class="HomePageSlide OnMobile">
             <div class="Container">
-                <div class="swiper HomePage-Swiper">
+                <div class="swiper HomePageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img class="Swiper-IMG" src="img/slide-mobile-1.png" alt="">
@@ -230,53 +70,53 @@
             </div>
         </section>
 
-        <section class="Section Section--Shadow">
+        <section class="Section Section_Shadow">
             <div class="Container">
-                <h3 class="Section-Title">Vợt cầu lông</h3>
-                <div class="Section-Grid">
+                <h3 class="SectionTitle">Vợt cầu lông</h3>
+                <div class="ProductGrid ProductGrid_5">
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
-                        </div>
-                    </div>
-                    <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
-                        </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
+                        </div>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -285,104 +125,104 @@
 
         <section class="Section">
             <div class="Container">
-                <h3 class="Section-Title">Giày cầu lông</h3>
-                <div class="Section-Grid">
+                <h3 class="SectionTitle">Giày cầu lông</h3>
+                <div class="ProductGrid ProductGrid_5">
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
-                        </div>
-                    </div>
-                    <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
-                        </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
+                        </div>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="Section Section--Shadow">
+        <section class="Section Section_Shadow">
             <div class="Container">
-                <h3 class="Section-Title">Vợt cầu lông cũ</h3>
-                <div class="Section-Grid">
+                <h3 class="SectionTitle">Vợt cầu lông cũ</h3>
+                <div class="ProductGrid ProductGrid_5">
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
-                        </div>
-                    </div>
-                    <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
-                        </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/vot-luot/77.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
-                            <p class="ProductItem-Price">4.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItemFrame">
+                            <img src="img/vot-luot/77.png" class="ProductItemThumnail" >
+                        </div>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">VỢT CẦU LÔNG YONEX ASTROX 77 PRO</p>
+                            <p class="ProductItemPrice">4.500.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -391,51 +231,51 @@
 
         <section class="Section">
             <div class="Container">
-                <h3 class="Section-Title">Quần áo cầu lông</h3>
-                <div class="Section-Grid">
+                <h3 class="SectionTitle">Quần áo cầu lông</h3>
+                <div class="ProductGrid ProductGrid_5">
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
-                        </div>
-                    </div>
-                    <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
-                        </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                     <div class="ProductItem">
-                        <div class="ProductItem-Frame">
-                            <img src="img/giay/65z3.png" class="ProductItem-Thumnail" >
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
                         </div>
-                        <div class="ProductItem-Info">
-                            <p class="ProductItem-Name">GIÀY CẦU LÔNG 65Z3</p>
-                            <p class="ProductItem-Price">2.500.000 VNĐ</p>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="ProductItem">
+                        <div class="ProductItemFrame">
+                            <img src="img/giay/65z3.png" class="ProductItemThumnail" >
+                        </div>
+                        <div class="ProductItemDetail">
+                            <p class="ProductItemName">GIÀY CẦU LÔNG 65Z3</p>
+                            <p class="ProductItemPrice">2.500.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -447,29 +287,29 @@
         <div class="Container">
             <div class="FooterGrid">
                 <div class="FooterColumn">
-                    <p class="FooterItem FooterItem--Lead">Công ty TNHH Mạnh Dũng Sports</p>
-                    <p class="FooterItem"><b>Địa chỉ</b> Số 72, phố Văn Giang, thị trấn Văn Giang, huyện Văn Giang, tỉnh Hưng Yên, Việt Nam</p>
-                    <p class="FooterItem"><b>Người đại diện</b> Đỗ Sơn Tùng</p>
-                    <p class="FooterItem"><b>Email</b> manhdungsports@gmail.com</p>
+                    <a href="#" class="FooterItem FooterItem_Heading">Công ty TNHH Mạnh Dũng Sports</a>
+                    <a href="#" class="FooterItem"><b>Địa chỉ</b> Số 72, phố Văn Giang, thị trấn Văn Giang, huyện Văn Giang, tỉnh Hưng Yên, Việt Nam</a>
+                    <a href="#" class="FooterItem"><b>Người đại diện</b> Đỗ Sơn Tùng</a>
+                    <a href="#" class="FooterItem"><b>Email</b> manhdungsports@gmail.com</a>
                 </div>
                 <div class="FooterColumn">
-                    <p class="FooterItem FooterItem--Lead">Hướng dẫn khách hàng</p>
-                    <p class="FooterItem">Hướng dẫn bảo hành</p>
-                    <p class="FooterItem">Hướng dẫn đổi trả hàng</p>
-                    <p class="FooterItem">Hướng dẫn vận chuyển</p>
-                    <p class="FooterItem">Hướng dẫn thanh toán</p>
-                    <p class="FooterItem">Hướng dẫn bảo mật</p>
+                    <a href="#" class="FooterItem FooterItem_Heading">Hướng dẫn khách hàng</a>
+                    <a href="#" class="FooterItem">Hướng dẫn bảo hành</a>
+                    <a href="#" class="FooterItem">Hướng dẫn đổi trả hàng</a>
+                    <a href="#" class="FooterItem">Hướng dẫn vận chuyển</a>
+                    <a href="#" class="FooterItem">Hướng dẫn thanh toán</a>
+                    <a href="#" class="FooterItem">Hướng dẫn bảo mật</a>
                 </div>
                 <div class="FooterColumn">
-                    <p class="FooterItem FooterItem--Lead">Hỗ trợ khách hàng</p>
-                    <p class="FooterItem">Hướng dẫn bảo hành</p>
-                    <p class="FooterItem">Hướng dẫn đổi trả hàng</p>
-                    <p class="FooterItem">Hướng dẫn vận chuyển</p>
-                    <p class="FooterItem">Hướng dẫn thanh toán</p>
-                    <p class="FooterItem">Hướng dẫn bảo mật</p>
+                    <a href="#" class="FooterItem FooterItem_Heading">Hỗ trợ khách hàng</a>
+                    <a href="#" class="FooterItem">Hướng dẫn bảo hành</a>
+                    <a href="#" class="FooterItem">Hướng dẫn đổi trả hàng</a>
+                    <a href="#" class="FooterItem">Hướng dẫn vận chuyển</a>
+                    <a href="#" class="FooterItem">Hướng dẫn thanh toán</a>
+                    <a href="#" class="FooterItem">Hướng dẫn bảo mật</a>
                 </div>
                 <div class="FooterColumn">
-                    <p class="FooterItem FooterItem--Lead">Vị trí cửa hàng</p>
+                    <a href="#" class="FooterItem FooterItem_Heading">Vị trí cửa hàng</a>
                     <div class="FooterItem">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.130189434382!2d105.93952307352077!3d20.947286290575235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135afcc68063b9f%3A0x5b21b9e15c97cfa!2zQ-G6p3UgbMO0bmcgTeG6oW5oIETFqW5nIChNRCBCQURNSU5UT04gU0hPUCk!5e0!3m2!1svi!2s!4v1747725729336!5m2!1svi!2s"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -480,16 +320,8 @@
     </footer>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".HomePage-Swiper", {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            }
-        });
-    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
